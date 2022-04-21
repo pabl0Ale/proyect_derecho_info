@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
 
-  onClick(){
+  btncrearCuenta(){
     this.router.navigate(['auth/registro'])
   }
 

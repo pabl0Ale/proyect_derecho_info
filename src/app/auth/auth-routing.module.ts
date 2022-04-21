@@ -17,7 +17,7 @@ const routes: Routes = [
         component: SignInComponent
       },
       {
-        path: 'inciarSeccion',
+        path: 'inciarSesion',
         component: LoginComponent
       },
       {
