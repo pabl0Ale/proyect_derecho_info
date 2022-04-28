@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { Menu1Component } from './components/menu1/menu1.component';
 import { Menu2Component } from './components/menu2/menu2.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { Menu2Component } from './components/menu2/menu2.component';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

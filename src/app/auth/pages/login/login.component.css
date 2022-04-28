@@ -1,8 +1,40 @@
-.container-father-login{
-  width: 87%;
-  margin: auto;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+.img-container{
+  background-image: url("../../../../assets/img/2.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size:  contain;
+  width: 75%;
+}
+
+.container-forms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.input-txt-form{
+  width: 410px;
+  padding: 0 0 0 10px;
+  height: 50px;
+  margin-top: 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
+  border: none;
+}
+
+.btn-iniciar{
+  background-color: #3450A2;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 17px;
+  margin-top: 60px;
+}
+
+.btn-iniciar:hover{
+  transform: scale(1.03);
 }

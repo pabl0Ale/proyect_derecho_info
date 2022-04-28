@@ -1,9 +1,82 @@
-<div class="container-sign-in-father">
+<div class="container-father-login">
   <app-menu1></app-menu1>
 
   <div class="container-container">
     <div class="container">
-      <p>crear cuenta</p>
+      <div class="img-container">
+        <!-- <pre>{{miFormulario.value | json}}
+        <span>Valid</span>
+        <pre>{{ miFormulario.valid }}</pre>
+
+        <span>Pristine</span>
+        <pre>{{ miFormulario.pristine }}</pre>
+
+        <span>Touched</span>
+        <pre>{{ miFormulario.touched }}</pre>
+        </pre> -->
+      </div>
+      <div class="container-fomrs-father">
+        <div class="container-forms-container">
+          <div class="titulo-crear-container">
+            <img  class="icon-crerCuenta" src="../../../../assets/img/icon.png" alt="">
+            <p class="titulo-crear">crear cuenta</p>
+          </div>
+          <form (ngSubmit)="guardarDatos()" [formGroup]="miFormulario" >
+            <div class="cantainer-forms">
+              <input  type="text"
+                      class="input-text-form"
+                      placeholder="Nombre"
+                      formControlName="nombre"
+              >
+              <span class="form-text-danger"
+                    *ngIf="campoEsValido('nombre')">
+                    El nombre es obligatorio
+              </span>
+
+              <input  type="text"
+                      class="input-text-form"
+                      placeholder="Correo electronico"
+                      formControlName="correo"
+              >
+              <span class="form-text-danger"
+                    *ngIf="campoEsValido('correo')">
+                    El correo es obligatorio
+              </span>
+
+              <input  type="password"
+                      class="input-text-form"
+                      placeholder="Contraseña"
+                      formControlName="contraseña"
+              >
+              <span class="form-text-danger"
+                    *ngIf="campoEsValido('contraseña')">
+                    la contraseña es obligatorio
+              </span>
+              <input  type="password"
+                      class="input-text-form"
+                      placeholder="Confimar contraseña"
+                      formControlName="confirContra"
+              >
+              <span class="form-text-danger"
+                    *ngIf="campoEsValido('confirContra')">
+                      la contraseña es obligatorio
+              </span>
+
+              <div class="container-file">
+                <div class="file-select">
+                  <input type="file" class="">
+                </div>
+              </div>
+
+            </div>
+            <div class="confimar-btn-container">
+              <button class="btn-crear-cuenta" type="submit" [disabled]="false"> Crear cuenta</button>
+              <p class="txt-cuenataExist" >Ya tienes una cuenta? <a href="click">click</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+

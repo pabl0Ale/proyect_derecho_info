@@ -1,16 +1,104 @@
-.container-sign-in-father{
-  width: 87%;
-  margin: auto;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+
+.img-container{
+  background-image: url("../../../../assets/img/3.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size:  contain;
+  width: 75%;
 }
 
-.container{
-  background-color: white;
-  margin: auto;
-  width: 95%;
-  height: 55%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.container-forms-container{
+  width: 410px;
 }
+
+.titulo-crear-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cantainer-forms{
+  display: grid;
+}
+
+.input-text-form{
+  height: 50px;
+  margin-top: 25px;
+  padding: 0 0 0 10px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
+}
+.input-text-errores{
+  color: rgb(206, 59, 59);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.container-file{
+  margin-top: 25px;
+}
+
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  color: #b6d1df;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccione una imagen tuya'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 120px;
+  height: 80px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: 'Seleccionar Archivo 1';
+}
+
+
+.confimar-btn-container{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.btn-crear-cuenta{
+  background-color: #3450A2;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 17px;
+}
+.btn-crear-cuenta:hover{
+  transform: scale(1.01);
+}
+
+.txt-cuenataExist{
+  margin-top: 3px;
+  font-size: 12px;
+  color: rgb(95, 95, 95);
+}
+
