@@ -1,0 +1,29 @@
+<div class="ctnr-logo-menu">
+  <p>MyApp</p>
+  <hr>
+</div>
+
+<div>
+  <ul class="menu-container">
+      <li
+          class="menu"
+          routerLinkActive="menu-backgroud"
+          [routerLinkActiveOptions]="{exact:true}"
+          [routerLink]="['/firmar',{id: datosUser._id} ]">
+          Firmar documento
+      </li>
+      <li
+        class="menu"
+        routerLinkActive="menu-backgroud"
+        [routerLink]="['/firmar/verificar', {id: datosUser._id}]">
+        Verificar documento
+      </li>
+      <li
+      class="menu"
+      routerLinkActive="menu-backgroud"
+      [routerLink]="['/firmar/historial', {id: datosUser._id}]">
+      Historial
+    </li>
+
+  </ul>
+</div>

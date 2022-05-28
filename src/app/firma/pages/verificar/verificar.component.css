@@ -1,0 +1,145 @@
+.ctnr-father-back{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns:  76% auto;
+  grid-template-rows: auto;
+}
+
+.ctnr_input_file_f{
+  background-color: #F8F8F8;
+  display: grid;
+  padding: 10px 0 10px 0;
+}
+
+
+
+.ctnr_btnCa_file_f{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.btn-labelfile-cntr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-file{
+  font-size: 120px;
+  color: #E6E6E6;
+}
+
+.icon-file:hover{
+  transform: scale(1.03);
+}
+
+.ctnr-file-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-CodigoFirma{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+  padding: 7px 10px;
+  width: 85%;
+  font-size: 16px;
+  margin: 25px 0;
+  outline: none;
+}
+
+.btn_file-verificar{
+  background-color: #3450A2;
+  font-size: 15px;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  font-weight: 700;
+}
+
+.btn_file-verificar:hover {
+  transform: scale(1.02);
+  background-color: #3c5ab3;
+}
+
+.txt-nota-firmar{
+  font-size: 13px;
+  color: #D876A2;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+
+.ctnr-back-show-result-sign{
+  width: 350px;
+  height: 300px;
+  z-index: 5;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 260px;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px;
+}
+
+.txt-titulo-archivoFirmado{
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.txtsubtitulo{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.txt-respuesta-firma{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(65, 65, 65);
+}
+
+.btn-cerrarFirmado{
+  background-color: #3450A2;
+  font-size: 15px;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.btn-file-limpiar{
+  color: rgb(112, 112, 112);
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.btn-file-limpiar:hover{
+  transform: scale(1.04);
+}
+
+.ctn-btn-file{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+}

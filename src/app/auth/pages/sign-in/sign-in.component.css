@@ -23,7 +23,7 @@
 
 .input-text-form{
   height: 50px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0 0 0 10px;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -31,6 +31,7 @@
 }
 .input-text-errores{
   color: rgb(206, 59, 59);
+  margin-top: -75px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -48,8 +49,8 @@
 .file-select::before {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: white;
-  color: #b6d1df;
-  font-weight: 700;
+  color: #bad1dd;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   text-align: center;

@@ -21,7 +21,7 @@
             <img  class="icon-crerCuenta" src="../../../../assets/img/icon.png" alt="">
             <p class="titulo-crear">crear cuenta</p>
           </div>
-          <form (ngSubmit)="guardarDatos()" [formGroup]="miFormulario" >
+          <form (ngSubmit)="guardarDatos()" [formGroup]="miFormulario" enctype="multipart/form-data" >
             <div class="cantainer-forms">
               <input  type="text"
                       class="input-text-form"
@@ -52,21 +52,17 @@
                     *ngIf="campoEsValido('contraseña')">
                     la contraseña es obligatorio
               </span>
-              <input  type="password"
-                      class="input-text-form"
-                      placeholder="Confimar contraseña"
-                      formControlName="confirContra"
-              >
-              <span class="form-text-danger"
-                    *ngIf="campoEsValido('confirContra')">
-                      la contraseña es obligatorio
-              </span>
 
               <div class="container-file">
                 <div class="file-select">
-                  <input type="file" class="">
+                  <input type="file" class="" (change)="imagenmetho($event)" >
                 </div>
               </div>
+
+<!-- 
+              <div *ngIf="urlimagen">
+                <img [src]="urlimagen" alt="p">
+              </div> -->
 
             </div>
             <div class="confimar-btn-container">

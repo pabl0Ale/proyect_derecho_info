@@ -5,13 +5,15 @@
     <div class="container">
       <div class="img-container"></div>
       <div class="container-fomrs-father">
-        <form action="">
+        <form  (ngSubmit)="guardarDatos()" [formGroup]="miFormulario" enctype="multipart/form-data">
           <div class="container-forms">
             <img  class="icon-crerCuenta" src="../../../../assets/img/icon.png" alt="">
             <p class="titulo-crear">Iniciar sesion</p>
-            <input type="text" class="input-txt-form" placeholder="Correo electronico">
-            <input type="text" class="input-txt-form" placeholder="contraseña">
-            <button class="btn-iniciar">iniciar Sesion</button>
+            <input type="text" class="input-txt-form" placeholder="Correo electronico" formControlName="correo" >
+            <span class="form-text-danger">{{errordatos}}</span>
+            <input type="text" class="input-txt-form" placeholder="contraseña" formControlName="contraseña">
+            <span class="form-text-danger">{{errordatos}}</span>
+            <button class="btn-iniciar" type="submit" [disabled]="false">iniciar Sesion</button>
           </div>
         </form>
       </div>

@@ -1,0 +1,34 @@
+<div class="container-father-login">
+  <app-nav  [datosUser]="datosUser"></app-nav>
+  <div class="ctn-fimar-father-home" >
+    <div class="ctnr-menu-father" >
+      <app-menu3 [datosUser]="datosUser"></app-menu3>
+    </div>
+
+    <div class="ctnr-content-father">
+      <div class="ctnr-father-back">
+        <div class="ctnr_content-files_f">
+
+          <div class="ctn-pdfView-historial" *ngIf="MostrarArchivoPDf">
+            <pdf-viewer
+            [src]="urlFileHistorialPdf"
+            [render-text]="true"
+            class="ctr-view-pdf"
+            style="display: block;"
+          ></pdf-viewer>
+          </div>
+
+          <div class="titulo-archivos-ctr-f">Archivos Firmados</div>
+          <div class="ctr-archivos-pdf-f-ba">
+            <div class="ctn-archivo-pdf-bac" *ngFor="let item of datosHistorial">
+              <p class="txt-titulo-archivo">Infomacion del Arhivo</p>
+              <p class="txt-subti-nombre"> Nombre:</p> <p class="txt-answer-nombre">{{item.usuario.nombre}}</p>
+              <p class="txt-subti-nombre"> Fecha:</p> <p class="txt-answer-nombre">{{item.createdAt}}</p>
+              <button class="btn-archivo-ver"  (click)="verArchivoHistorial($event)" [id]="item._id">Ver Archivo</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+

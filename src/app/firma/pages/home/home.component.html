@@ -1,0 +1,49 @@
+<div class="ctn-firmado-back-f" *ngIf="irSiguiente">
+  <div class="ctr-firmado-background">
+    <div class="ctr-file-pdf-back-f">
+        <pdf-viewer
+        [src]="urlPdfFileFirmado"
+        [render-text]="true"
+        class="pdf-viewer"
+        style="display: block;"
+        >jh</pdf-viewer>
+    </div>
+    <div class="ctr-file-btn-aceptar-back-f" >
+      <button class="btn-Aceptar-firmado"  (click)="CerrarPanFirmado()">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<div class="container-father-login">
+  <app-nav  [datosUser]="datosUser"></app-nav>
+  <div class="ctn-fimar-father-home" >
+    <div class="ctnr-menu-father" >
+      <app-menu3 [datosUser]="datosUser" ></app-menu3>
+    </div>
+
+
+    <div class="ctnr-content-father">
+      <div class="ctnr-father-back">
+        <div class="ctnr_input_file_f">
+          
+          <label for="btn-file-id" class="btn-labelfile-cntr"  *ngIf="valorBooleanOCul">
+            <div class="ctnr-file-input">
+              <i class="fas fa-cloud-upload-alt icon-file"></i>
+              <span class="btn-text-file" >!Click¡ para Seleccione el PDF para firmar</span>
+            </div>
+          </label>
+          <input type="file" id="btn-file-id" hidden  (change)="obtnerPDF($event)">
+
+          <pdf-viewer *ngIf="valorBooleanOMost"
+            [src]="urlPdfFile"
+            [render-text]="true"
+            style="display: block;"
+          ></pdf-viewer>
+        </div>
+        <div class="ctnr_btnCa_file_f">
+          <button class="btn_file" (click)="firmarPDF()" >Firmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
